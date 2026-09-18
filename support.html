@@ -468,14 +468,25 @@
         </h2>
 
         <div class="faq-item">
+            <div class="faq-question">Is VoxScript free, and do I need a subscription?</div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>VoxScript includes 30 minutes of free transcription. For unlimited transcription, choose a monthly subscription or a one-time lifetime purchase in the app.</p>
+                    <p>The monthly plan renews automatically until cancelled in your Apple ID subscription settings. The lifetime option is a single payment with no recurring subscription. Current prices are shown in the app before you purchase.</p>
+                    <p>Already purchased? Use <strong>Restore Purchases</strong> in the app with the Apple ID used for your original purchase.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
             <div class="faq-question">How do I transcribe an audio or video file?</div>
             <div class="faq-answer">
                 <div class="faq-answer-content">
                     <ol>
-                        <li>Tap <strong>"Choose Source"</strong> on the main screen</li>
+                        <li>Open the file import options on the Home screen</li>
                         <li>Select <strong>"Browse Files"</strong> to pick from Files app, or <strong>"Photo Library"</strong> for videos</li>
                         <li>Choose your audio/video file</li>
-                        <li>VoxScript will automatically transcribe it (takes 1-2 minutes per minute of audio)</li>
+                        <li>Review your language and model settings, then start transcription</li>
                         <li>View the transcription with timestamps and audio playback</li>
                     </ol>
                 </div>
@@ -490,13 +501,14 @@
                     <div class="formats-grid">
                         <div class="format-card">
                             <h4>Audio</h4>
-                            <p>MP3, WAV, M4A, AAC, FLAC, OGG</p>
+                            <p>MP3, WAV, M4A, AAC, FLAC</p>
                         </div>
                         <div class="format-card">
                             <h4>Video</h4>
-                            <p>MP4, MOV, AVI, MKV (audio extracted automatically)</p>
+                            <p>MP4, MOV (audio extracted automatically)</p>
                         </div>
                     </div>
+                    <p>MKV, AVI, WebM, and OGG are not supported by the current app. Convert these files to MP4, M4A, or WAV before importing. Compatibility also depends on the audio codec inside the file.</p>
                 </div>
             </div>
         </div>
@@ -507,12 +519,12 @@
                 <div class="faq-answer-content">
                     <p>Transcription speed depends on:</p>
                     <ul>
-                        <li><strong>File length</strong> — Generally 1-2 minutes of processing per minute of audio</li>
-                        <li><strong>Device model</strong> — Newer iPhones (iPhone 13+) are faster</li>
-                        <li><strong>Model selection</strong> — Tiny model is faster, Base model is more accurate but slower</li>
-                        <li><strong>First use</strong> — The AI model downloads on first transcription (40-140 MB)</li>
+                        <li><strong>File length</strong> — Longer recordings take more time</li>
+                        <li><strong>Device</strong> — Processing speed varies with your hardware and available resources</li>
+                        <li><strong>Model selection</strong> — Lightning prioritizes speed; Balanced and Precision prioritize accuracy</li>
+                        <li><strong>First use</strong> — Preparing a model for the first time can take longer</li>
                     </ul>
-                    <p>Processing happens entirely on your device for privacy, which takes longer than cloud services but keeps your data secure.</p>
+                    <p>Processing happens on your device. VoxScript updates its time estimate as transcription progresses. If an imported file pauses after you lock your iPhone, reopen the app to let it resume.</p>
                 </div>
             </div>
         </div>
@@ -522,14 +534,15 @@
             <div class="faq-answer">
                 <div class="faq-answer-content">
                     <ol>
-                        <li>Tap the gear icon in the top-right corner</li>
+                        <li>Open <strong>Settings</strong></li>
                         <li>Select your preferred model:
                             <ul>
-                                <li><strong>Tiny</strong> — Fast, smaller download (~40MB), good accuracy</li>
-                                <li><strong>Base</strong> — Slower, larger download (~140MB), better accuracy</li>
+                                <li><strong>Lightning</strong> — Fastest, ideal for live English recording</li>
+                                <li><strong>Balanced</strong> — A balance of speed and accuracy across supported languages</li>
+                                <li><strong>Precision</strong> — Best available accuracy, with higher processing requirements</li>
                             </ul>
                         </li>
-                        <li>The model will download on your next transcription if not already installed</li>
+                        <li>Choose separate models for file transcription and live recording. The app may select a more suitable model for your recording's language.</li>
                     </ol>
                 </div>
             </div>
@@ -543,8 +556,9 @@
                     <ul>
                         <li><strong>Export as Text</strong> — Creates a .txt file with the transcription and timestamps</li>
                         <li><strong>Export as SRT</strong> — Creates a subtitle file (.srt) for video editing software</li>
+                        <li><strong>Export as PDF or Word</strong> — Creates a document you can save or share</li>
                     </ul>
-                    <p>Both options use the iOS share sheet — you can save to Files, send via email, or share to other apps.</p>
+                    <p>Use the export or share options in your transcript to save a file, send it by email, or open it in another app.</p>
                 </div>
             </div>
         </div>
@@ -553,7 +567,7 @@
             <div class="faq-question">Does VoxScript need internet access?</div>
             <div class="faq-answer">
                 <div class="faq-answer-content">
-                    <p><strong>No internet required after setup.</strong> On your first transcription, VoxScript downloads the selected AI model (one-time download). After that, everything works completely offline. Your audio files never leave your device.</p>
+                    <p><strong>Transcription works offline.</strong> The current app includes its transcription models. Internet access is needed for purchases, restoring purchases, and any additional model or translation-language downloads. Your audio is not uploaded for transcription.</p>
                 </div>
             </div>
         </div>
@@ -562,13 +576,13 @@
             <div class="faq-question">Is my data private?</div>
             <div class="faq-answer">
                 <div class="faq-answer-content">
-                    <p><strong>Yes, completely.</strong> VoxScript:</p>
+                    <p>VoxScript keeps transcription on your device:</p>
                     <ul>
-                        <li>Processes everything on your device</li>
-                        <li>Never uploads audio files to any server</li>
-                        <li>Doesn't collect any user data</li>
+                        <li>Processes audio and transcript content on your device</li>
+                        <li>Does not upload your audio for transcription</li>
+                        <li>Does not include audio or transcript content in analytics</li>
                         <li>Doesn't require an account or login</li>
-                        <li>Has no analytics or tracking</li>
+                        <li>Collects basic usage analytics to improve the app</li>
                     </ul>
                     <p>See our <a href="privacy-policy.html">Privacy Policy</a> for full details.</p>
                 </div>
@@ -579,14 +593,14 @@
             <div class="faq-question">What languages are supported?</div>
             <div class="faq-answer">
                 <div class="faq-answer-content">
-                    <p>VoxScript supports <strong>80+ languages</strong> through the Whisper AI model, including:</p>
+                    <p>VoxScript supports <strong>20+ transcription languages</strong>, including:</p>
                     <ul>
                         <li>English, Spanish, French, German, Italian, Portuguese</li>
                         <li>Chinese (Mandarin), Japanese, Korean</li>
                         <li>Arabic, Hindi, Russian</li>
                         <li>And many more...</li>
                     </ul>
-                    <p>Language is detected automatically from the audio.</p>
+                    <p>Select the language spoken in your recording before you begin. The app's language selector shows the available languages.</p>
                 </div>
             </div>
         </div>
@@ -601,7 +615,7 @@
                         <li><strong>Speaker clarity</strong> — Distinct speech is easier to transcribe</li>
                         <li><strong>Accents</strong> — Strong accents may reduce accuracy</li>
                         <li><strong>Technical terms</strong> — Specialized vocabulary may be misinterpreted</li>
-                        <li><strong>Model choice</strong> — Try the Base model for better accuracy</li>
+                        <li><strong>Model choice</strong> — Try Balanced or Precision for better accuracy, and check that the selected language matches your recording</li>
                     </ul>
                     <p>For best results, use clear recordings in quiet environments.</p>
                 </div>
@@ -612,13 +626,8 @@
             <div class="faq-question">Can I transcribe phone calls or live audio?</div>
             <div class="faq-answer">
                 <div class="faq-answer-content">
-                    <p><strong>No.</strong> VoxScript only transcribes pre-recorded audio and video files. It does not support:</p>
-                    <ul>
-                        <li>Live recording and transcription</li>
-                        <li>Real-time speech-to-text</li>
-                        <li>Phone call recording</li>
-                    </ul>
-                    <p>You must first create an audio recording using another app (like Voice Memos), then import it into VoxScript.</p>
+                    <p><strong>Live microphone recording and transcription are supported.</strong> Open the Live tab, allow microphone access, and start recording to see text as you speak.</p>
+                    <p>VoxScript does not record phone calls directly. You can import an existing audio recording from Files or another app.</p>
                 </div>
             </div>
         </div>
@@ -655,11 +664,11 @@
                     <p>Try these solutions:</p>
                     <ul>
                         <li>Restart the app</li>
-                        <li>Free up storage space (transcription models need 40-140MB)</li>
+                        <li>Check that your device has enough free storage for recordings and models</li>
                         <li>Try a shorter audio file first to test</li>
-                        <li>Switch to the Tiny model if using Base</li>
+                        <li>Try a faster model in Settings</li>
                         <li>Restart your iPhone</li>
-                        <li>Ensure iOS is up to date (iOS 17.0 or later required)</li>
+                        <li>Install the latest compatible app update (currently requires iOS/iPadOS 18.6 or macOS 26.0 or later)</li>
                     </ul>
                 </div>
             </div>
@@ -671,9 +680,9 @@
                 <div class="faq-answer-content">
                     <ul>
                         <li>Check your internet connection</li>
-                        <li>Ensure you have enough free storage (40MB for Tiny, 140MB for Base)</li>
+                        <li>Ensure you have enough free storage for the selected download</li>
                         <li>Try restarting the app and attempting transcription again</li>
-                        <li>If problem persists, delete and reinstall the app</li>
+                        <li>If the problem persists, contact support. Deleting the app removes locally stored recordings and transcripts, so export anything you need to keep before considering a reinstall.</li>
                     </ul>
                 </div>
             </div>

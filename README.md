@@ -1,31 +1,31 @@
 # VoxScript - Support & Privacy
 
-This repository contains the public-facing documentation for VoxScript iOS app.
+This repository contains the website and public-facing documentation for VoxScript on iPhone, iPad, and Mac.
 
 ## 📄 Pages
 
-- **[Privacy Policy](privacy-policy.html)** - How we protect your data (spoiler: we don't collect any)
+- **[Privacy Policy](privacy-policy.html)** - How we protect your recordings and disclose usage analytics
 - **[Support](support.html)** - FAQ, troubleshooting, and contact information
 
 ## 📱 About VoxScript
 
-VoxScript is an offline AI transcription app for iOS. All transcription happens on-device with complete privacy.
+VoxScript is an offline AI transcription app. Audio and transcript processing happen on-device.
 
 ✨ **Features:**
 - Offline AI transcription using WhisperKit
 - SRT subtitle export for video editing
 - Audio playback with word highlighting
-- No data collection or cloud uploads
-- One-time purchase, no subscriptions
-- Support for 80+ languages
+- Audio and transcript content stay on-device during transcription
+- 30 free minutes, with monthly and one-time lifetime options for unlimited transcription
+- Support for 20+ transcription languages
 
 🔐 **Privacy First:**
 - No account required
-- No data collection
-- No tracking
+- Basic usage analytics help improve the app
+- Audio and transcript content are not included in analytics
 - All processing on-device
 
-[Download on the App Store](#) _(coming soon)_
+[Download on the App Store](https://apps.apple.com/us/app/voxscript/id6755663054)
 
 ## 📞 Contact & Support
 
