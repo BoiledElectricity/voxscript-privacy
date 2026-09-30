@@ -143,8 +143,8 @@
 
         /* Section Cards */
         .section {
-            background: var(--black-card);
-            border: 1px solid var(--black-border);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
             border-radius: 16px;
             padding: 32px;
             margin-bottom: 24px;
@@ -183,6 +183,11 @@
 
         .section p:last-child {
             margin-bottom: 0;
+        }
+
+        .section a {
+            color: var(--primary-light);
+            text-underline-offset: 3px;
         }
 
         .highlight {
@@ -336,129 +341,110 @@
 
     <section class="hero">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">Your data is yours, and yours alone. VoxScript is designed with privacy as the top priority.</p>
-        <span class="last-updated">Last Updated: March 2026</span>
+        <p class="subtitle">Local transcription, with clear information about purchases, usage analytics, and marketing measurement.</p>
+        <span class="last-updated">Last Updated: September 30, 2026</span>
     </section>
 
     <main>
         <div class="zero-data">
             <h2>Your Content Stays On Your Device</h2>
-            <p>Your audio, videos, and transcriptions never leave your iPhone. All processing is 100% on-device.</p>
+            <p>VoxScript processes your recordings and transcripts on your device. We do not upload their content for transcription, analytics, or advertising measurement.</p>
         </div>
 
         <div class="section">
-            <h2><span class="section-icon">🔒</span> What We Don't Collect</h2>
-            <p>VoxScript does not collect, store, transmit, or process any of the following:</p>
+            <h2><span class="section-icon">🔒</span> Your Recordings and Transcripts</h2>
+            <p>This policy covers VoxScript on iPhone, iPad, and Mac, and this website. VoxScript does not send its analytics or purchase services:</p>
             <ul>
-                <li>Personal information (name, email, phone number, etc.)</li>
                 <li>Audio or video files you transcribe</li>
                 <li>Transcription text or results</li>
-                <li>Any content you create or import</li>
-                <li>Your precise location</li>
+                <li>The text of your notes, vocabulary entries, or speaker names</li>
             </ul>
+            <p>You do not need a VoxScript account. If you contact support, we receive the contact details and information you choose to send; please avoid including private recordings or transcripts unless needed for your request.</p>
         </div>
 
         <div class="section">
             <h2><span class="section-icon">📱</span> How VoxScript Works</h2>
             <p>All transcription processing happens entirely on your device:</p>
             <ul>
-                <li><strong>On-Device Processing</strong> — Audio and video files are processed locally using WhisperKit AI technology running on your iPhone's processor</li>
-                <li><strong>No Cloud Uploads</strong> — Your files never leave your device unless you explicitly choose to share or export them</li>
-                <li><strong>No Internet Required</strong> — After the initial download of AI models, VoxScript works completely offline</li>
+                <li><strong>On-Device Processing</strong> — Speech recognition and supported transcript tools run locally using the models available on your device</li>
+                <li><strong>Your Choice to Share</strong> — Exports, sharing, cloud-backed file locations, and device backups are controlled by you and the services you select</li>
+                <li><strong>Offline Transcription</strong> — Transcription works offline after required models are installed. Downloads, purchases, purchase restoration, and analytics use network services separately</li>
                 <li><strong>No Account Required</strong> — No account creation, login, or user registration needed</li>
             </ul>
         </div>
 
         <div class="section">
             <h2><span class="section-icon">🎛️</span> Permissions</h2>
-            <p>VoxScript requests the following iOS permissions to function:</p>
+            <p>Depending on your platform and the features you use, VoxScript requests access for:</p>
             <ul>
-                <li><strong>Photo Library Access</strong> — To select videos from your photo library for transcription. Files remain on your device</li>
-                <li><strong>Files Access</strong> — To import audio and video files from the Files app or iCloud Drive. Files remain on your device</li>
+                <li><strong>Microphone</strong> — To record audio you choose to transcribe</li>
+                <li><strong>Photos and Files</strong> — To import media you select. A cloud-backed source may download the selected file before local processing</li>
+                <li><strong>Device Authentication</strong> — Optional App Lock uses the operating system's authentication. VoxScript does not receive your Face ID or Touch ID biometric data</li>
             </ul>
-            <p>These permissions are used solely for their stated purpose and do not enable any data collection.</p>
+            <p>You can manage supported permissions in your device's system settings.</p>
         </div>
 
         <div class="section">
             <h2><span class="section-icon">🤖</span> AI Model Downloads</h2>
-            <p>On first use, VoxScript downloads Whisper AI models from Apple's content delivery network. These downloads are handled by iOS and do not involve any data collection by VoxScript. The models are stored locally on your device.</p>
+            <p>Some models are bundled; others are downloaded from model hosting or content-delivery services when needed. Download servers receive ordinary request information, such as your IP address and the requested model files. These requests do not include your recordings or transcripts. Downloaded models are stored on your device.</p>
         </div>
 
         <div class="section">
             <h2><span class="section-icon">💾</span> Data Storage</h2>
-            <p>All data created by VoxScript (transcriptions, settings, downloaded models) is stored locally on your device in the app's sandbox. This data is:</p>
-            <ul>
-                <li>Only accessible by VoxScript</li>
-                <li>Not backed up to iCloud by default (follows iOS backup policies)</li>
-                <li>Deleted when you uninstall the app</li>
-                <li>Never transmitted to external servers</li>
-            </ul>
+            <p>Your library, settings, and downloaded models are stored locally. App extensions use shared app storage to deliver files you import. Device backups and files you export to iCloud Drive or other locations follow the settings and policies of those services.</p>
+            <p>Deleting an item in VoxScript does not delete copies you exported elsewhere. Uninstalling or removing app data does not necessarily remove device backups, exported files, or purchase and analytics records already held by service providers.</p>
         </div>
 
         <div class="section">
             <h2><span class="section-icon">📤</span> Exports and Sharing</h2>
             <p>When you export or share transcriptions:</p>
             <ul>
-                <li>VoxScript uses iOS's native share sheet</li>
+                <li>VoxScript uses the platform's sharing and file-export controls</li>
                 <li>You control where exported files are sent</li>
-                <li>VoxScript does not have access to or knowledge of where you share files</li>
-                <li>The sharing functionality is provided entirely by iOS</li>
+                <li>Recipients and destination services handle the files under their own privacy policies</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2><span class="section-icon">🔗</span> Third-Party Services</h2>
-            <p>VoxScript uses the following services:</p>
-            <ul>
-                <li><strong>WhisperKit</strong> — On-device AI processing. No data is sent externally</li>
-                <li><strong>Firebase Analytics</strong> — Anonymous usage statistics to help us improve the app (feature popularity, crash reports, general device type). This data is aggregated and cannot identify you personally</li>
-                <li><strong>Apple StoreKit</strong> — For in-app purchases, handled entirely by Apple</li>
-            </ul>
-            <p>VoxScript does not use any advertising networks and never sells data.</p>
+            <h2><span class="section-icon">🔗</span> Purchases</h2>
+            <p>VoxScript uses Apple StoreKit and RevenueCat to validate purchases, restore access, enable paid features, and understand subscription performance. RevenueCat receives transaction and entitlement information associated with an app-generated identifier, including product, purchase, renewal, and refund information. Apple processes your payment; VoxScript does not receive your payment card details.</p>
+            <p>No VoxScript account is required, and recordings and transcript content are not sent to RevenueCat. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
         </div>
 
         <div class="section">
             <h2><span class="section-icon">📊</span> Analytics</h2>
-            <p>We collect anonymous usage data to understand how VoxScript is used and to fix bugs. This includes:</p>
+            <p>VoxScript uses Google Analytics for Firebase to understand feature use and reliability. This can include:</p>
             <ul>
                 <li>Which features are used (e.g., recording vs file import)</li>
-                <li>App crashes and errors</li>
-                <li>General device type and iOS version</li>
-                <li>Country (not precise location)</li>
+                <li>App launches, screen views, model choices, purchase events, and whether a transcription succeeded</li>
+                <li>Processing duration, audio length, word counts, and categorized errors, without the underlying recording or text</li>
+                <li>App-instance and technical device information, app and operating-system versions, and general location derived from network information, not GPS permission</li>
             </ul>
-            <p>This data is <span class="highlight">completely anonymous</span> — we cannot identify individual users. Your audio, transcriptions, and personal content are never included in analytics.</p>
+            <p>Analytics uses app-generated identifiers, so we do not describe these records as completely anonymous. Earlier app versions may also collect the vendor identifier through Firebase. The iPhone and iPad 3.0.1 update disables vendor-ID collection and ad-personalization signals and uses Firebase's analytics component without advertising-identity support.</p>
+            <p>Apple's system Analytics &amp; Improvements switch is not an in-app control for Firebase. For details about Google's processing, see <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
         </div>
 
         <div class="section">
-            <h2><span class="section-icon">👶</span> Children's Privacy</h2>
-            <p>VoxScript does not collect personal information from anyone, including children under 13. The anonymous analytics we collect cannot identify individual users of any age.</p>
+            <h2><span class="section-icon">📈</span> Measuring Our Apple Ads</h2>
+            <p><strong>VoxScript does not display ads inside the app.</strong> Starting with iPhone and iPad version 3.0.1, supported App Store installations use Apple's standard AdServices attribution through RevenueCat to understand whether an Apple Ads campaign led to a download and later purchases.</p>
+            <p>This measurement can include campaign, ad group, keyword, and attribution identifiers associated with purchase information. This integration does not request the advertising identifier (IDFA) or an App Tracking Transparency prompt. It does not include audio, video, or transcript content. The Mac app and TestFlight builds do not enable this Apple Ads collection.</p>
         </div>
 
         <div class="section">
-            <h2><span class="section-icon">⚖️</span> Your Rights</h2>
-            <p>VoxScript does not collect personal data, so there is no personal information to request, delete, or correct. For analytics:</p>
-            <ul>
-                <li>You can limit analytics via iOS Settings → Privacy & Security → Analytics</li>
-                <li>Analytics data is anonymous and not linked to you personally</li>
-                <li>Uninstalling the app removes all local data</li>
-            </ul>
-            <p>Your privacy is protected by design, not by policy alone.</p>
+            <h2 id="privacy-choices"><span class="section-icon">⚖️</span> Retention and Your Choices</h2>
+            <p>You control your local library, exports, backups, and device permissions. Apple manages subscription cancellation and refund requests; deleting the app does not cancel a subscription.</p>
+            <p>Purchase, analytics, and support records may remain with us or our service providers after you delete the app, according to service settings and applicable retention requirements. We do not promise a single retention period for every provider or automatic deletion of server records when the app is uninstalled.</p>
+            <p>Depending on your location, you may have rights to access, correct, or delete personal data, or object to its processing. Contact <a href="mailto:contact@voxscript.app">contact@voxscript.app</a> with a privacy request, including concerns about information relating to a child. We may need information to locate the relevant records; please do not send payment credentials or sensitive recordings.</p>
         </div>
 
         <div class="section">
-            <h2><span class="section-icon">📜</span> Legal Compliance</h2>
-            <p>VoxScript complies with:</p>
-            <ul>
-                <li>Apple App Store Review Guidelines</li>
-                <li>General Data Protection Regulation (GDPR)</li>
-                <li>California Consumer Privacy Act (CCPA)</li>
-                <li>Children's Online Privacy Protection Act (COPPA)</li>
-            </ul>
+            <h2><span class="section-icon">🌐</span> This Website</h2>
+            <p>This website is hosted through GitHub Pages and loads fonts from Google. Those providers receive ordinary web requests, including network and browser information. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a> and <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Following an App Store or other external link takes you to that provider's service.</p>
         </div>
 
         <div class="section">
             <h2><span class="section-icon">📝</span> Changes to This Policy</h2>
-            <p>If we make any changes to this privacy policy, we will update the "Last Updated" date at the top of this page and notify users through an app update description.</p>
+            <p>We update the date on this page when this policy changes. Version-specific practices are identified above; a description of an upcoming version does not mean that version is already available to download.</p>
         </div>
 
         <div class="section contact">
@@ -469,7 +455,7 @@
     </main>
 
     <footer>
-        <p>VoxScript &copy; 2025. All rights reserved.</p>
+        <p>VoxScript &copy; 2026. All rights reserved.</p>
         <p style="margin-top: 8px;">
             <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
             <a href="terms.html">Terms of Use</a> &nbsp;·&nbsp;
